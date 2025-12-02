@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda para Gatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="MichiStore Logo">
+            <span class="store-name">MichiStore</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>🐱 MichiStore</h1>
+        <p>Todo lo que tu gato necesita en un solo lugar</p>
+        <a href="#galeria" class="cta-button">Ver Productos</a>
+    </section>
+
+    <section id="informacion">
+        <h2>Nuestra Pasión: Los Gatos</h2>
+        <div class="info-content">
+            <p>En MichiStore, entendemos que tu gato es parte de tu familia. Por eso ofrecemos productos de la más alta calidad, cuidadosamente seleccionados para el bienestar y felicidad de tu felino.</p>
+            <p>Contamos con más de 10 años de experiencia en el cuidado de gatos y trabajamos con las mejores marcas del mercado.</p>
+            
+                <div style="background: linear-gradient(135deg, #667eea 0%, #af8cd1 100%); padding: 3rem; text-align: center; color: white; border-radius: 15px;">
+                    <h3 style="margin-bottom: 1rem;">🎬 Conoce Más Sobre el Cuidado de Gatos</h3>
+                    <p style="margin-bottom: 1.5rem;">Para ver videos educativos sobre gatos, visita nuestro canal</p>
+                    <a href="https://www.youtube.com/results?search_query=cuidado+de+gatos+tips" target="_blank" style="background: white; color: #667eea; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block;">Ver Videos en YouTube →</a>
+                </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Nuestros Productos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="alimento.html" target="_blank"><img src="imagenes/comida-gatos.jpg" alt="Comida para gatos"></a>
+                <div class="gallery-overlay">
+                    <h3>Alimento Premium</h3>
+                    <p>Nutrición balanceada para tu felino</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="juguetes.html" target="_blank"><img src="imagenes/juguetes.jpg" alt="Juguetes"></a>
+                <div class="gallery-overlay">
+                    <h3>Juguetes Interactivos</h3>
+                    <p>Diversión garantizada</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="rascadores.html" target="_blank"><img src="imagenes/rascadores.jpg" alt="Rascadores"></a>
+                <div class="gallery-overlay">
+                    <h3>Rascadores</h3>
+                    <p>Cuida sus uñas naturalmente</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="camas.html" target="_blank"><img src="imagenes/descarga (2).jpg" alt="Camas"></a>
+                <div class="gallery-overlay">
+                    <h3>Camas Confortables</h3>
+                    <p>El descanso que merecen</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="accesorios.html" target="_blank"><img src="imagenes/accesorio.jpeg" alt="Accesorios"></a>
+                <div class="gallery-overlay">
+                    <h3>Accesorios</h3>
+                    <p>Collares, correas y más</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="higiene.html" target="_blank"><img src="imagenes/higiene.jpeg" alt="Higiene"></a>
+                <div class="gallery-overlay">
+                    <h3>Higiene y Cuidado</h3>
+                    <p>Productos de limpieza premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MichiStore</h3>
+                <p>Tu tienda felina de confianza</p>
+                <p>Productos de calidad para tu gato</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📧 info@michistore.com</p>
+                <p>📞 +54 341 123-4567</p>
+                <p>📍 Rosario, Santa Fe, Argentina</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">📘</a>
+                    <a href="#" target="_blank">📷</a>
+                    <a href="#" target="_blank">🐦</a>
+                    <a href="#" target="_blank">💬</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MichiStore. Todos los derechos reservados. Hecho con 💜 para los amantes de los gatos.</p>
+        </div>
+    </footer>
+     <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        function handleSubmit(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            alert(`¡Gracias ${nombre}! Hemos recibido tu mensaje y te contactaremos pronto.`);
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
